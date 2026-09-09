@@ -20,7 +20,7 @@ jobs:
         java-version: '17'
 
     - name: Build and Test
-      mvn -f pom.xml clean test
+      run: mvn -f pom.xml clean test
+
     - name: Package
       run: mvn -f pom.xml package -DskipTests
-    
